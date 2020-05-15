@@ -1,0 +1,109 @@
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.first {
+    text-align: center;
+    padding-top: 40px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.answer_text {
+    transition: 1.5s;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+}
+.animation{
+    transition: 1.5s;
+}
+
+#answer {
+    /* display: none; */
+}
+
+@keyframes color-fade {
+    0% {
+        background-color: #f002;
+    }
+
+    50% {
+        background-color: #f002;
+    }
+
+    100% {
+        background-color: initial;
+    }
+}
+
+input::-webkit-input-placeholder {
+    color: #999;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: #999;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: #999;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: #999;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+input {
+    outline: none;
+}
+
+.input-regexp {
+    width: 170px;
+    padding: 10px;
+    text-align: center;
+    font: 20px sans-serif;
+    border: 5px inset darkgoldenrod;
+}
+
+.input-regexp.anim {
+    animation: color-fade 0.5s linear;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.alert {
+    transition: 1.5s;
+    color: red;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0;
+    font-size: 20px;
+}
